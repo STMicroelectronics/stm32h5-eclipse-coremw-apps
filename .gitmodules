@@ -1,0 +1,44 @@
+[submodule "Drivers/STM32H5xx_HAL_Driver"]
+	path = Drivers/STM32H5xx_HAL_Driver
+	url = https://github.com/STMicroelectronics/stm32h5xx-hal-driver.git
+	branch = main
+[submodule "Drivers/CMSIS/Device/ST/STM32H5xx"]
+	path = Drivers/CMSIS/Device/ST/STM32H5xx
+	url = https://github.com/STMicroelectronics/cmsis-device-h5.git
+	branch = main
+[submodule "Drivers/BSP/STM32H573I-DK"]
+	path = Drivers/BSP/STM32H573I-DK
+	url = https://github.com/STMicroelectronics/stm32h573i-discovery-bsp.git
+	branch = main
+[submodule "Drivers/BSP/STM32H5xx_Nucleo"]
+	path = Drivers/BSP/STM32H5xx_Nucleo
+	url = https://github.com/STMicroelectronics/stm32h5xx-nucleo-bsp.git
+	branch = main
+[submodule "Drivers/BSP/Components/Common"]
+	path = Drivers/BSP/Components/Common
+	url = https://github.com/STMicroelectronics/stm32-bsp-common.git
+	branch = main
+[submodule "Drivers/BSP/Components/lan8742"]
+	path = Drivers/BSP/Components/lan8742
+	url = https://github.com/STMicroelectronics/stm32-lan8742.git
+	branch = main
+[submodule "Drivers/BSP/Components/tcpp0203"]
+	path = Drivers/BSP/Components/tcpp0203
+	url = https://github.com/STMicroelectronics/stm32-tcpp0203.git
+	branch = main
+[submodule "Middlewares/ST/filex"]
+	path = Middlewares/ST/filex
+	url = https://github.com/STMicroelectronics/stm32-mw-filex.git
+	branch = main
+[submodule "Middlewares/ST/levelx"]
+	path = Middlewares/ST/levelx
+	url = https://github.com/STMicroelectronics/stm32-mw-levelx.git
+	branch = main
+[submodule "Middlewares/Third_Party/FreeRTOS"]
+	path = Middlewares/Third_Party/FreeRTOS
+	url = https://github.com/STMicroelectronics/stm32-mw-freertos.git
+	branch = master
+[submodule "Middlewares/ST/usbx"]
+	path = Middlewares/ST/usbx
+	url = https://github.com/STMicroelectronics/stm32-mw-usbx.git
+	branch = main
