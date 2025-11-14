@@ -34,8 +34,8 @@ STM32H563xx board, it shows how to develop USB Device Human Interface
 <p>The application is designed to emulate a USB HID mouse device, the
 code provides all required device descriptors framework and associated
 class descriptor report to build a compliant USB HID mouse device.</p>
-<p>The application’s main calls the MX_USBX_Device_Init() function in
-order to initialize USBX and USBX_Device_Process in the while loop.</p>
+<p>The application’s main calls the MX_USBX_Device_Init() function in order to initialize USBX and MX_USBPD_Init() function in order to initialize USBPD. 
+ USBX_Device_Process and USBPD_DPM_Run are both in the while loop.</p>
 <p>As stated earlier, the present application runs in standalone mode
 without FreeRTOS, for this reason, the standalone variant of USBX is
 enabled by adding the following flag in ux_user.h:</p>
@@ -71,7 +71,8 @@ USB suspended bus back to the active condition).</p>
 </ul>
 <h4 id="usbx-usage-hints"><b>USBX usage hints</b></h4>
 <h3 id="keywords"><b>Keywords</b></h3>
-<p>Standalone, USBX Device, USB_DRD, Full Speed, HID, Mouse</p>
+<p>Standalone, USBX Device, USB_DRD, Full Speed, HID, Mouse,
+USBPD</p>
 <h3 id="hardware-and-software-environment"><b>Hardware and Software
 environment</b></h3>
 <ul>

@@ -416,15 +416,6 @@ VOID USBX_APP_Host_Init(VOID)
                              (ULONG)&hhcd_USB_DRD_FS);
 
 
-  BSP_USBPD_PWR_Init(0);
-  BSP_USBPD_PWR_SetRole(0, POWER_ROLE_SOURCE);
-  BSP_USBPD_PWR_VBUSInit(0);
-  BSP_USBPD_PWR_VBUSOn(0);
-
-  /* Enable USB Global Interrupt */
-  HAL_HCD_Start(&hhcd_USB_DRD_FS);
-
-
   /* USER CODE BEGIN USB_Host_Init_PostTreatment1 */
 
   /* Start Application Message */

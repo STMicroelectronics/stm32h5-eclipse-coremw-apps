@@ -6,7 +6,8 @@ it shows how to develop USB Device Human Interface "HID" mouse based bare metal 
 The application is designed to emulate a USB HID mouse device, the code provides all required device descriptors framework
 and associated class descriptor report to build a compliant USB HID mouse device.
 
-The application's main calls the MX_USBX_Device_Init() function in order to initialize USBX and USBX_Device_Process in the while loop.
+The application’s main calls the MX_USBX_Device_Init() function in order to initialize USBX and MX_USBPD_Init() function in order to initialize USBPD. 
+USBX_Device_Process and USBPD_DPM_Run are both in the while loop.
 
 As stated earlier, the present application runs in standalone mode without FreeRTOS, for this reason, the standalone variant of USBX is enabled by adding the following flag in ux_user.h:
 
@@ -44,7 +45,7 @@ The remote wakeup feature is not yet implemented (used to bring the USB suspende
 
 ### <b>Keywords</b>
 
-Standalone, USBX Device, USB_DRD, Full Speed, HID, Mouse
+Standalone, USBX Device, USB_DRD, Full Speed, HID, Mouse, USBPD
 
 ### <b>Hardware and Software environment</b>
 

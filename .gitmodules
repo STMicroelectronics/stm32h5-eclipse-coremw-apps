@@ -42,3 +42,7 @@
 	path = Middlewares/ST/usbx
 	url = https://github.com/STMicroelectronics/stm32-mw-usbx.git
 	branch = main
+[submodule "Middlewares/ST/STM32_USBPD_Library/Core"]
+	path = Middlewares/ST/STM32_USBPD_Library/Core
+	url = https://github.com/STMicroelectronics/stm32-mw-usbpd-core.git
+	branch = main

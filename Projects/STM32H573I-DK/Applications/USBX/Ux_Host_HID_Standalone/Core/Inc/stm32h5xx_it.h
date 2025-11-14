@@ -57,6 +57,7 @@ void PendSV_Handler(void);
 void SysTick_Handler(void);
 void USART1_IRQHandler(void);
 void USB_DRD_FS_IRQHandler(void);
+void UCPD1_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 #if defined(TCPP0203_SUPPORT)
 void TCPP0203_PORT0_FLG_EXTI_IRQHANDLER(void);

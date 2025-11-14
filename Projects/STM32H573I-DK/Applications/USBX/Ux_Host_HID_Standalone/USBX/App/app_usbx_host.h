@@ -29,6 +29,10 @@ extern "C" {
 #include "main.h"
 #include "ux_host_mouse.h"
 #include "ux_host_keyboard.h"
+
+#include "ux_system.h"
+#include "ux_utility.h"
+#include "ux_host_stack.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "ux_hcd_stm32.h"
@@ -41,7 +45,7 @@ extern "C" {
 
 /* Exported constants --------------------------------------------------------*/
 #define UX_HOST_APP_MEM_POOL_SIZE  22528
-#define USBX_HOST_MEMORY_STACK_SIZE     22528
+#define USBX_HOST_MEMORY_STACK_SIZE     1024*24
 
 /* USER CODE BEGIN EC */
 

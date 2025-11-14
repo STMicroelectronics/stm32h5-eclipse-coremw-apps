@@ -28,11 +28,11 @@ vertical-align: middle;
 <div class="row">
 <section id="ux_host_hid_standalone-application-description" class="col-sm-12 col-lg-8">
 <h2><b>Ux_Host_HID_Standalone Application Description</b></h2>
-<p>This application provides an example of Eclipse USBX stack usage . It
-shows how to develop bare metal USB Host Human Interface “HID” able to
+<p>This application provides an example of Eclipse USBX stack usage in standalone mode.
+It shows how to develop bare metal USB Host Human Interface “HID” able to
 enumerate and communicate with a mouse or a keyboard.</p>
-<p>The application’s main calls the MX_USBX_Host_Init() function in
-order to initialize USBX and USBX_Host_Process in the while loop.</p>
+<p>The application’s main calls the MX_USBX_Host_Init() function in order to initialize USBX and MX_USBPD_Init() function in order to initialize USBPD. 
+USBX_Host_Process and USBPD_DPM_Run are both in the while loop.</p>
 <p>As stated earlier, the present application runs in standalone mode
 without FreeRTOS, for this reason, the standalone variant of USBX is
 enabled by adding the following flag in ux_user.h:</p>
@@ -72,7 +72,7 @@ and HID class Specification.</p>
 <h3 id="notes"><b>Notes</b></h3>
 <h4 id="usbx-usage-hints"><b>USBX usage hints</b></h4>
 <h3 id="keywords"><b>Keywords</b></h3>
-<p>Standalone, USBX Host, USB, HID, Mouse, Keyboard, UART, USART,</p>
+<p>Standalone, USBX Host, USB, HID, Mouse, Keyboard, UART, USART, USBPD</p>
 <h3 id="hardware-and-software-environment"><b>Hardware and Software
 environment</b></h3>
 <ul>

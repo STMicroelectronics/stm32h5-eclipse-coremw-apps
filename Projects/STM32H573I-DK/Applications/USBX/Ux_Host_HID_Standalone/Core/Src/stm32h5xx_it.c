@@ -20,9 +20,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32h5xx_it.h"
+#include "usbpd.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stm32h5xx_ll_exti.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -226,6 +227,21 @@ void USB_DRD_FS_IRQHandler(void)
   /* USER CODE BEGIN USB_DRD_FS_IRQn 1 */
 
   /* USER CODE END USB_DRD_FS_IRQn 1 */
+}
+
+/**
+  * @brief This function handles UCPD1 global interrupt.
+  */
+void UCPD1_IRQHandler(void)
+{
+  /* USER CODE BEGIN UCPD1_IRQn 0 */
+
+  /* USER CODE END UCPD1_IRQn 0 */
+  USBPD_PORT0_IRQHandler();
+
+  /* USER CODE BEGIN UCPD1_IRQn 1 */
+
+  /* USER CODE END UCPD1_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */
