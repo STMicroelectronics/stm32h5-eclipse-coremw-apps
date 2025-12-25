@@ -18,10 +18,6 @@
 	path = Drivers/BSP/Components/Common
 	url = https://github.com/STMicroelectronics/stm32-bsp-common.git
 	branch = main
-[submodule "Drivers/BSP/Components/lan8742"]
-	path = Drivers/BSP/Components/lan8742
-	url = https://github.com/STMicroelectronics/stm32-lan8742.git
-	branch = main
 [submodule "Drivers/BSP/Components/tcpp0203"]
 	path = Drivers/BSP/Components/tcpp0203
 	url = https://github.com/STMicroelectronics/stm32-tcpp0203.git
@@ -45,4 +41,8 @@
 [submodule "Middlewares/ST/STM32_USBPD_Library/Core"]
 	path = Middlewares/ST/STM32_USBPD_Library/Core
 	url = https://github.com/STMicroelectronics/stm32-mw-usbpd-core.git
+	branch = main
+[submodule "Drivers/BSP/Components/mx25lm51245g"]
+	path = Drivers/BSP/Components/mx25lm51245g
+	url = https://github.com/STMicroelectronics/stm32-mx25lm51245g
 	branch = main

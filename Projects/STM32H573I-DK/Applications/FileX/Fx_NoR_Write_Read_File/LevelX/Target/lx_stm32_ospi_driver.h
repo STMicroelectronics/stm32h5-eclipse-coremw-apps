@@ -98,7 +98,7 @@ extern SemaphoreHandle_t xspi_tx_semaphore;
 /* USER CODE BEGIN LX_STM32_OSPI_READ_CPLT_NOTIFY */
 
 #define LX_STM32_OSPI_READ_CPLT_NOTIFY(__status__)      do { \
-                                                          if(xSemaphoreTake(xspi_rx_semaphore, HAL_XSPI_TIMEOUT_DEFAULT_VALUE) == NULL) \
+                                                          if(xSemaphoreTake(xspi_rx_semaphore, HAL_XSPI_TIMEOUT_DEFAULT_VALUE) == pdFALSE) \
                                                           { \
                                                             __status__ = LX_ERROR; \
                                                           } \
@@ -134,7 +134,7 @@ extern SemaphoreHandle_t xspi_tx_semaphore;
 /* USER CODE BEGIN LX_STM32_OSPI_WRITE_CPLT_NOTIFY */
 
 #define LX_STM32_OSPI_WRITE_CPLT_NOTIFY(__status__)     do { \
-                                                          if(xSemaphoreTake(xspi_tx_semaphore, HAL_XSPI_TIMEOUT_DEFAULT_VALUE) == NULL) \
+                                                          if(xSemaphoreTake(xspi_tx_semaphore, HAL_XSPI_TIMEOUT_DEFAULT_VALUE) == pdFALSE) \
                                                           { \
                                                             __status__ = LX_ERROR; \
                                                           } \

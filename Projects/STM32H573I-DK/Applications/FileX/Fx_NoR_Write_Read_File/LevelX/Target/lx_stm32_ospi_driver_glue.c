@@ -362,7 +362,7 @@ INT lx_stm32_ospi_write(UINT instance, ULONG *address, ULONG *buffer, ULONG word
     }
 
     /* Check success of the transmission of the data */
-    if(xSemaphoreTake(xspi_tx_semaphore, HAL_XSPI_TIMEOUT_DEFAULT_VALUE) == NULL)
+    if(xSemaphoreTake(xspi_tx_semaphore, HAL_XSPI_TIMEOUT_DEFAULT_VALUE) == pdFALSE)
     {
      return 1;
     }

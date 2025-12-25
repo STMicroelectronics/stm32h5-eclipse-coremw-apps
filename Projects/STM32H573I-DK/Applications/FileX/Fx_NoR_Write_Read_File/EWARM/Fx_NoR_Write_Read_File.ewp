@@ -74,7 +74,7 @@
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>9.20.1.43525</state>
+                    <state>9.20.4.46976</state>
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
@@ -1451,12 +1451,6 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\filex\common\src\fx_media_close_notify_set.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\filex\common\src\fx_media_exFAT_format.c</name>
-                    <excluded>
-                        <configuration>Fx_NoR_Write_Read_File</configuration>
-                    </excluded>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\filex\common\src\fx_media_extended_space_available.c</name>

@@ -97,6 +97,6 @@ RTOS, USBX, USBXDevice, USB_DRD, Full Speed, CDC, VCP, USART, DMA.
 
 In order to make the program work, you must do the following :
 
- - Open EWARM project
+ - Open your preferred toolchain
  - Rebuild all files and load your image into target memory
  - Run the application

@@ -64,6 +64,8 @@ static void MX_USART1_UART_Init(void);
 /* New definition from EWARM V9, compatible with EWARM8 */
 int iar_fputc(int ch);
 #define PUTCHAR_PROTOTYPE int iar_fputc(int ch)
+#elif defined(__GNUC__)
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #endif /* __ICCARM__ */
 
 /* USER CODE END PFP */

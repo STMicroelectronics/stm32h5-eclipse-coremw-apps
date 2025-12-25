@@ -265,7 +265,7 @@ VOID usbx_cdc_acm_read_thread_entry(VOID *input)
   ULONG actual_length;
   UX_SLAVE_DEVICE *device;
 
-  UX_PARAMETER_NOT_USED(*input);
+  UX_PARAMETER_NOT_USED(input);
 
   device = &_ux_system_slave->ux_system_slave_device;
 

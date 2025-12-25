@@ -96,6 +96,6 @@ RTOS, FreeRTOS, FileX, LevelX, File System, NOR, OCTOSPI, XSPI, FAT32
 
 In order to make the program work, you must do the following :
 
- - Open EWARM project
+ - Open your preferred toolchain
  - Rebuild all files and load your image into target memory
  - Run the application
