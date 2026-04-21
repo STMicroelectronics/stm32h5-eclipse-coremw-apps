@@ -132,6 +132,8 @@ UINT MX_FileX_Init(VOID)
   ULONG bytes_read;
   CHAR read_buffer[32];
   CHAR data[] = "This is FileX working on STM32";
+
+  printf("FileX uSD Application Start.\n");
  /* USER CODE END fx_thread_entry 0 */
 
   /* Open the SD disk driver */
@@ -231,6 +233,8 @@ UINT MX_FileX_Init(VOID)
       }
     }
 
+    printf("STM32.TXT file created in the root directory.\n");
+
     /* Open the test file. */
     sd_status =  fx_file_open(&sdio_disk, &fx_file, "STM32.TXT", FX_OPEN_FOR_WRITE);
 
@@ -260,6 +264,8 @@ UINT MX_FileX_Init(VOID)
       /* Error writing to a file, call error handler. */
       Error_Handler();
     }
+
+    printf("Writing data into the uSD.\n");
 
     /* Close the test file. */
     sd_status =  fx_file_close(&fx_file);
@@ -309,6 +315,8 @@ UINT MX_FileX_Init(VOID)
       /* Error reading file, call error handler. */
       Error_Handler();
     }
+
+    printf("Data written successfully.\n");
 
     /* Close the test file. */
     sd_status =  fx_file_close(&fx_file);

@@ -1918,6 +1918,9 @@
                     <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\levelx\common\src\lx_nor_flash_open.c</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\levelx\common\src\lx_nor_flash_open_extended.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\..\..\..\..\..\Middlewares\ST\levelx\common\src\lx_nor_flash_partial_defragment.c</name>
                 </file>
                 <file>

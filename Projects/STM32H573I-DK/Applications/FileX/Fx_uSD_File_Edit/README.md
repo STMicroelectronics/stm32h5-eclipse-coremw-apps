@@ -76,6 +76,13 @@ RTOS, FreeRTOS, FileX, File system, SDMMC, FAT32
   - This application has been tested with STMicroelectronics STM32H573I-DK boards revision: MB1677-H573I-C01
     and can be easily tailored to any other supported device and development board.
 
+  - This application uses USART1 to display logs, the hyperterminal configuration is as follows:
+    - BaudRate = 115200 baud
+    - Word Length = 8 Bits
+    - Stop Bit = 1
+    - Parity = none
+    - Flow control = None
+
 ### <b>How to use it ?</b>
 
 In order to make the program work, you must do the following :
