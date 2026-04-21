@@ -95,6 +95,8 @@ VOID MX_FileX_Process(void)
   CHAR read_buffer[32];
   CHAR data[] = "This is FileX working on STM32";
 
+  printf("FileX File Edit Standalone Application Start.\n");
+
   /* Create a file called STM32.TXT in the root directory. */
   status =  fx_file_create(&sdio_disk, "STM32.TXT");
 
@@ -109,6 +111,8 @@ VOID MX_FileX_Process(void)
       Error_Handler();
     }
   }
+
+  printf("STM32.TXT file created in the root directory.\n");
 
   /* Open the test file. */
   status =  fx_file_open(&sdio_disk, &fx_file, "STM32.TXT", FX_OPEN_FOR_WRITE);
@@ -129,6 +133,8 @@ VOID MX_FileX_Process(void)
     /* Error performing file seek, call error handler. */
     Error_Handler();
   }
+
+  printf("Writing data into the file. \n");
 
   /* Write a string to the test file. */
   status =  fx_file_write(&fx_file, data, sizeof(data));
@@ -208,6 +214,8 @@ VOID MX_FileX_Process(void)
     /* Error closing the media, call error handler. */
     Error_Handler();
   }
+
+  printf("Data successfully written.\n");
 
   /* Infinite loop */
   while (1)

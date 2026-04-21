@@ -19,6 +19,7 @@ As stated earlier, the present application runs in standalone mode without FreeR
 
 - A file named STM32.TXT should be visible in the root directory of the SD card.
 - A blinking green LED light marks the success of the file operations.
+- Information regarding executing operation on the uSD is printed to the serial port.
 
 #### <b>Error behaviors</b>
 
@@ -49,6 +50,12 @@ FileX, File System, FAT32, Standalone, SDMMC
   - This application has been tested with STMicroelectronics STM32H573I-DK boards revision: MB1677-H573I-C01
     and can be easily tailored to any other supported device and development board.
 
+  - This application uses USART1 to display logs, the hyperterminal configuration is as follows:
+    - BaudRate = 115200 baud
+    - Word Length = 8 Bits
+    - Stop Bit = 1
+    - Parity = none
+    - Flow control = None
 
 ### <b>How to use it ?</b>
 

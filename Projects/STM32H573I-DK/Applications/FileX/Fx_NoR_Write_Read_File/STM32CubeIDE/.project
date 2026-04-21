@@ -1313,6 +1313,11 @@
 			<locationURI>PARENT-6-PROJECT_LOC/Middlewares/ST/levelx/common/src/lx_nor_flash_open.c</locationURI>
 		</link>
 		<link>
+			<name>Middlewares/LevelX/NOR Flash Support/lx_nor_flash_open_extended.c</name>
+			<type>1</type>
+			<locationURI>PARENT-6-PROJECT_LOC/Middlewares/ST/levelx/common/src/lx_nor_flash_open_extended.c</locationURI>
+		</link>
+		<link>
 			<name>Middlewares/LevelX/NOR Flash Support/lx_nor_flash_partial_defragment.c</name>
 			<type>1</type>
 			<locationURI>PARENT-6-PROJECT_LOC/Middlewares/ST/levelx/common/src/lx_nor_flash_partial_defragment.c</locationURI>
