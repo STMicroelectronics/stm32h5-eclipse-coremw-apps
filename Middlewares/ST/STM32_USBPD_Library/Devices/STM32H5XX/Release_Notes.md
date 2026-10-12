@@ -33,7 +33,39 @@ and Connector Specification, Revision 2.0 (August, 2019).
 # Update History
 
 ::: {.collapse}
-<input type="checkbox" id="collapse-section5" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section6" checked aria-hidden="true">
+<label for="collapse-section6" aria-hidden="true">V1.3.2 / 08-May-2026</label>
+<div>
+
+## Main Changes
+
+  Headline
+  --------
+  SW_Security_Level.md file added
+
+## Known limitations
+
+  Outstanding bugs list : None
+
+  Requirements not met or planned in a forthcoming release : None
+
+## Supported Devices and boards
+
+  All STM32H5xx devices embedding UCPD IP
+
+## Backward compatibility
+
+  No compatibility break with previous version
+
+## Dependencies
+
+ This software release is compatible with USB-C Power Delivery Core Stack Library v4.3.3
+
+</div>
+:::
+
+::: {.collapse}
+<input type="checkbox" id="collapse-section5" aria-hidden="true">
 <label for="collapse-section5" aria-hidden="true">V1.3.1 / 25-Sep-2025</label>
 <div>
 

@@ -44,5 +44,5 @@
 	branch = main
 [submodule "Drivers/BSP/Components/mx25lm51245g"]
 	path = Drivers/BSP/Components/mx25lm51245g
-	url = https://github.com/STMicroelectronics/stm32-mx25lm51245g
+	url = https://github.com/STMicroelectronics/stm32-mx25lm51245g.git
 	branch = main
